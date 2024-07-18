@@ -24,6 +24,12 @@ namespace Cassino.Entities
         {
             return $"* {this.Id}";
         }
+        internal void Dispose()
+        {
+            Next = null;
+            Prev = null;
+            Nome = null;
+        }
     }
 
     internal class Game
@@ -115,6 +121,10 @@ namespace Cassino.Entities
                         _headAux = anticlockwise.Prev;
                     }
                     Display(clockwise, anticlockwise);
+
+                    // Desfazendo referências (desalocar Garbage Collector)
+                    clockwise.Dispose();
+                    anticlockwise.Dispose();
                 }
             }
             else

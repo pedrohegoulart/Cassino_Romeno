@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cassino")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a257893bbd056b01703b757d3c234ed3ca9ca2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc684d3b6c2cc360dcf705618b2458abca608d5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cassino")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cassino")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
