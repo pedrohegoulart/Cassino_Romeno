@@ -1,0 +1,14 @@
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\bin\Debug\net8.0\Cassino.exe
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\bin\Debug\net8.0\Cassino.deps.json
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\bin\Debug\net8.0\Cassino.runtimeconfig.json
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\bin\Debug\net8.0\Cassino.dll
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\bin\Debug\net8.0\Cassino.pdb
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.dll
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\refint\Cassino.dll
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.pdb
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\Cassino.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Documentos\C#\Cassino\Cassino\obj\Debug\net8.0\ref\Cassino.dll
