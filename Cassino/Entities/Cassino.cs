@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cassino.Entities.Exceptions;
+using System;
 
 namespace Cassino.Entities
 {
@@ -61,8 +62,6 @@ namespace Cassino.Entities
         {
             if (_head != null && _headAux != null)
             {
-                //return _head;
-
                 Gambler clockwise = _head;
                 Gambler anticlockwise = _headAux;
 
@@ -77,35 +76,36 @@ namespace Cassino.Entities
                         anticlockwise = anticlockwise.Prev!;
                 }
 
+                //Somente um Apostador
                 if (clockwise == _head && clockwise.Next == _head && anticlockwise == _head && anticlockwise.Next == _head)
                 {
-                    _head = null; //Devo ter que mexer
+                    _head = null;
                     _headAux = null;
-                    //Console.Write($"{clockwise.Id} - - {anticlockwise.Id},");
                     Display(clockwise, anticlockwise);
                 }
                 else
                 {
+                    // Ate dois jogadores
                     if (clockwise.Prev == anticlockwise && clockwise.Next == anticlockwise)
                     {
-                        _head = null; //Devo ter que mexer
+                        _head = null;
                         _headAux = null;
                     }
-                    else if (clockwise.Prev == anticlockwise)
+                    else if (clockwise.Prev == anticlockwise) // Anti-horario retira o anterior
                     {
                         clockwise.Prev.Prev!.Next = clockwise.Next;
                         clockwise.Next!.Prev = clockwise.Prev.Prev;
                         _head = clockwise.Next;
                         _headAux = anticlockwise.Prev;
                     }
-                    else if (clockwise.Next == anticlockwise)
+                    else if (clockwise.Next == anticlockwise) // Anti-horario retira o posterior
                     {
                         clockwise.Prev!.Next = clockwise.Next.Next;
                         clockwise.Next.Next!.Prev = clockwise.Prev;
                         _head = clockwise.Next.Next;
                         _headAux = anticlockwise.Prev!.Prev;
                     }
-                    else
+                    else // Caso de independencia entre os retirados
                     {
                         clockwise.Prev!.Next = clockwise.Next;
                         clockwise.Next!.Prev = clockwise.Prev;
@@ -114,18 +114,17 @@ namespace Cassino.Entities
                         _head = clockwise.Next;
                         _headAux = anticlockwise.Prev;
                     }
-
-                    //Console.Write($"{clockwise.Id} - - {anticlockwise.Id},");
                     Display(clockwise, anticlockwise);
                 }
-
-                //return head;
+            }
+            else
+            {
+                throw new DomainException("Entrada inválida. Jogadores ainda não foram adicionados.");
             }
         }
 
         public void Rounds(int k, int m)
         {
-            //Gambler? iRound = null;
             do
             {
                 Round(k, m);
@@ -150,15 +149,6 @@ namespace Cassino.Entities
             {
                 Console.WriteLine($"*{clockwise} *{anticlockwise}"); // Ganhador Duplo (com **)
             }
-            //if (head == null)
-            //    return;
-            //
-            //Gambler temp = head;
-            //do
-            //{
-            //    Console.WriteLine(temp);
-            //    temp = temp.Next;
-            //} while (temp != head);
         }
     }
 }

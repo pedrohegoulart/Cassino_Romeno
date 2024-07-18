@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\C#\\Cassino\\Cassino\\Cassino.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GIT\\Cassino_Romeno\\Cassino\\Cassino.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\C#\\Cassino\\Cassino\\Cassino.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GIT\\Cassino_Romeno\\Cassino\\Cassino.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\C#\\Cassino\\Cassino\\Cassino.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\GIT\\Cassino_Romeno\\Cassino\\Cassino.csproj",
         "projectName": "Cassino",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\C#\\Cassino\\Cassino\\Cassino.csproj",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GIT\\Cassino_Romeno\\Cassino\\Cassino.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\C#\\Cassino\\Cassino\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GIT\\Cassino_Romeno\\Cassino\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
